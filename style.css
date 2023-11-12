@@ -1,0 +1,92 @@
+body {
+  background: #191919;
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  /* background-image: url("/images/grass.jpg"); */
+  background-repeat: repeat;
+  background-size: 300px 300px;
+}
+
+section {
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0px;
+  color: chocolate;
+  font-size: 30px;
+}
+
+.views {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  /* height: 80vh; */
+}
+
+.view {
+  box-sizing: border-box;
+  width: 650px;
+  min-height: 400px;
+  margin: 20px;
+  background: rgb(63, 38, 20);
+}
+
+.menu {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 10px;
+  width: 550px;
+  height: 60px;
+  /* background: rgb(34, 33, 33); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu .box {
+  width: 50px;
+  height: 50px;
+  margin: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-position: center;
+  background-size: 10px 10px;
+}
+
+.active {
+  outline: rgb(255, 255, 255) 2px solid;
+}
+
+table {
+  position: relative;
+  background: turquoise;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+td {
+  position: relative;
+  background: repeating-radial-gradient(rgb(59, 58, 58), rgb(85, 85, 87));
+  width: 50px;
+  height: 50px;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+}
+
+td:hover {
+  filter: brightness(1.5);
+  background-position: top left;
+}
